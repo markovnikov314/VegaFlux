@@ -1,0 +1,4 @@
+surface_id,status,reason,accepted_quote_count,monotonic_violations,butterfly_violations,calendar_violations
+"clean_smile_v1","PASS","fit_ok",20,0,0,0
+"corrupt_smile_v1","STATIC_ARBITRAGE_VIOLATION","monotonic=1,butterfly=1,calendar=0",5,1,1,0
+"corrupt_put_smile_v1","STATIC_ARBITRAGE_VIOLATION","monotonic=1,butterfly=1,calendar=0",4,1,1,0

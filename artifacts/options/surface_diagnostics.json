@@ -1,0 +1,18 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "options",
+  "status": "pass",
+  "surface_model_id": "quadratic_total_variance_v1",
+  "algorithm_version": "vegaflux_options_cpp_v1",
+  "input": "./data_contracts/fixtures/synthetic_options.csv",
+  "input_checksum": "fnv64:5684573d085f1ba7",
+  "evaluation_ts_ns": 1000000000,
+  "max_quote_age_ns": 200000000,
+  "assumptions": {"spot": 100, "rate": 0.05, "dividend_yield": 0},
+  "quote_filter_counts": {"ACCEPTED":15,"CROSSED":1,"NON_POSITIVE":1,"STALE":1,"UNINVERTIBLE":1},
+  "fits": [
+    {"surface_id":"clean_smile_v1","surface_model_id":"quadratic_total_variance_v1","algorithm_version":"vegaflux_options_cpp_v1","status":"PASS","reason":"fit_ok","accepted_quote_count":10,"quote_checksum":"fnv64:e1cb5e965155df10","input_checksum":"fnv64:5684573d085f1ba7","rmse_iv":0.0528688698747321,"coefficients":[0.0346080975479319,0.00665981925168686,0.373296937516842],"static_arbitrage":{"monotonic_violations":0,"butterfly_violations":0,"calendar_violations":0},"forward_rate_dividend_assumptions":{"spot":100,"rate":0.05,"dividend_yield":0,"forwards_by_expiry":[{"expiry_years":0.5,"forward":102.531512052443},{"expiry_years":1,"forward":105.127109637602}]}},
+    {"surface_id":"corrupt_smile_v1","surface_model_id":"quadratic_total_variance_v1","algorithm_version":"vegaflux_options_cpp_v1","status":"STATIC_ARBITRAGE_VIOLATION","reason":"monotonic=1,butterfly=1,calendar=0","accepted_quote_count":5,"quote_checksum":"fnv64:3723508f57bb1643","input_checksum":"fnv64:5684573d085f1ba7","rmse_iv":null,"coefficients":[],"static_arbitrage":{"monotonic_violations":1,"butterfly_violations":1,"calendar_violations":0},"forward_rate_dividend_assumptions":{"spot":100,"rate":0.05,"dividend_yield":0,"forwards_by_expiry":[{"expiry_years":0.5,"forward":102.531512052443}]}}
+  ],
+  "note": "synthetic diagnostic baseline; no strategy or performance claim"
+}

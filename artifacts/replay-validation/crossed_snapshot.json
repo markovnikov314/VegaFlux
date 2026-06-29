@@ -1,0 +1,12 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "venue": "SYNTH",
+  "symbol": "VGFX",
+  "session": "CROSSED-BOOK",
+  "sequence_number": 2,
+  "event_ts_ns": 1700000000002002000,
+  "bids": [],
+  "asks": [{"price_ticks":10100,"quantity":10,"order_count":1}],
+  "state_checksum": 1797508338441674634,
+  "checkpoint_id": ""
+}

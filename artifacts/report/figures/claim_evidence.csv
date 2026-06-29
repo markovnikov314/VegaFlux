@@ -1,0 +1,7 @@
+claim_id,claim,evidence_paths
+REPORT-C01,The report includes statistical intervals only for samples meeting the bootstrap threshold.,artifacts/report/bootstrap_intervals.csv;artifacts/surface-validation/iv_residuals.csv
+REPORT-C02,"Queue outcomes are sensitive to hidden-ahead, latency, and cancel-rate assumptions in the synthetic fixture.",artifacts/report/figures/queue_sensitivity.csv;artifacts/execution-sensitivity/scenario_sweep.csv
+REPORT-C03,Surface safety diagnostics reject unsafe synthetic smiles and expose quote-filter statuses.,artifacts/report/figures/surface_diagnostics.csv;artifacts/surface-validation/static_arbitrage.csv;artifacts/surface-validation/surface_diagnostics.json
+REPORT-C04,"Policy ablation rows are quote-mechanics checks only, not market-return evidence.",artifacts/report/figures/policy_ablation.csv;artifacts/policy-validation/ablation_table.csv
+REPORT-C05,The report uses a no-login public IEX TOPS sample for real quote/trade diagnostics.,artifacts/report/free_data_manifest.json;artifacts/report/public_iex_summary.json;artifacts/report/public_iex_quote_stats.csv;REPORT.md
+REPORT-C06,Public TOPS evidence does not support individual visible queue or fill claims.,artifacts/report/public_iex_summary.json;artifacts/report/negative_results.csv;REPORT.md

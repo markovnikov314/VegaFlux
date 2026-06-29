@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "decoder_smoke_cpp",
+  "dataset": ".\\data_contracts/fixtures/synthetic_itch.bin",
+  "dataset_checksum": "21fc4b10e96b2cea19d04edc7fad6fce94befdeb2dc411ac379a520438ac9cf0",
+  "events": 5,
+  "iterations": 7,
+  "median_decode_ns": 329300,
+  "min_decode_ns": 300400,
+  "note": "smoke wiring only; not a performance claim",
+  "quarantined": 0,
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

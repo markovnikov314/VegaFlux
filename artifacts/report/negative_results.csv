@@ -1,0 +1,9 @@
+area,source_path,observed_result,interpretation,treatment
+external_data,artifacts/report/free_data_manifest.json,"IEX TOPS public sample ingested, but it is aggregated top-of-book",real quote/trade diagnostics are supported; individual queue/fill claims are not,real_data_scope_limit
+queue_sensitivity,artifacts/execution-sensitivity/scenario_sweep.csv,hidden_ahead_x1 and latency_x4 scenarios are UNFILLED_CENSORED,synthetic fills are sensitive to hidden-ahead and latency assumptions,"reported as sensitivity, not calibration"
+queue_statistics,artifacts/report/bootstrap_intervals.csv,queue and markout samples are below bootstrap threshold,confidence intervals would be fake precision,not_enough_data
+surface_safety,artifacts/surface-validation/static_arbitrage.csv,corrupt call and put smiles fail static-arbitrage checks,safe-fail path works on fixture,negative fixture evidence
+forward_extraction,artifacts/surface-validation/surface_diagnostics.json,put-call parity forward extraction remains TODO,manifest assumptions are not a real forward curve,limitation
+pnl_attribution,artifacts/policy-validation/pnl_attribution.json,delta hedge and Greeks explain fields are zero placeholders,no hedge-performance or Greeks-attribution claim,limitation
+benchmarks,artifacts/report/figures/benchmark_smoke_table.csv,benchmark artifacts are smoke wiring timings,not production latency or throughput evidence,no performance claim
+quantstats,artifacts/policy-validation/pnl_attribution.json,no chronological returns series exists,QuantStats report would be misleading,not_applicable

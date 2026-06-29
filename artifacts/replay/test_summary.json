@@ -1,0 +1,104 @@
+{
+    "command":  "python python/scripts/clean_build_test.py",
+    "schema_version":  "vegaflux.canonical_market.v0.1",
+    "status":  "pass",
+    "tests":  [
+                  {
+                      "name":  "build_project",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "contracts_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "fixture_check",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "python_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_compatibility",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_negative_reused_field",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "manifest_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "foundation_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_fixture_check",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_cli_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_golden_final_book_state",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_deterministic_checksum",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_checkpoint_restore_equivalence",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_invalid_event_anomaly",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_gap_audit_boundary",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_seek_by_sequence",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_random_reference_replay",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_mutated_single_event_regression",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_large_synthetic_memory_growth_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_cli_snapshot_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_benchmark_smoke",
+                      "result":  "pass"
+                  }
+              ],
+    "timestamp_utc":  "2026-06-24T02:57:48Z"
+}

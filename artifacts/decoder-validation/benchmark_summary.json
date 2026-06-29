@@ -1,0 +1,18 @@
+{
+  "benchmark_id": "decoder_smoke_cpp",
+  "dataset": ".\\data_contracts/fixtures/synthetic_itch.bin",
+  "dataset_checksum": "21fc4b10e96b2cea19d04edc7fad6fce94befdeb2dc411ac379a520438ac9cf0",
+  "events": 5,
+  "iterations": 7,
+  "allocation_count_note": "global operator new count during DecodeBytes; smoke only",
+  "allocation_count_p50": 424,
+  "allocation_count_p99": 424,
+  "median_decode_ns": 310900,
+  "min_decode_ns": 304300,
+  "note": "smoke wiring only; not a performance claim",
+  "p50_decode_ns": 310900,
+  "p99_decode_ns": 446500,
+  "quarantined": 0,
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "replay_smoke_cpp",
+  "dataset": ".\\artifacts/decoder-validation/extended.normalized.jsonl",
+  "dataset_checksum": "fnv64:43672e6fcd5da1e6",
+  "events": 8,
+  "iterations": 11,
+  "median_replay_ns": 35200,
+  "min_replay_ns": 33900,
+  "note": "smoke wiring only; not a performance claim",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "state_checksum": 15487670931959197814,
+  "status": "pass"
+}

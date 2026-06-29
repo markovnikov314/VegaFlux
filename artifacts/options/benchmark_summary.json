@@ -1,0 +1,14 @@
+{
+  "benchmark_id": "options_smoke_cpp",
+  "dataset": ".\\data_contracts/fixtures/synthetic_options.csv",
+  "dataset_checksum": "fnv64:5684573d085f1ba7",
+  "iterations": 11,
+  "median_diagnostics_ns": 659600,
+  "min_diagnostics_ns": 629400,
+  "note": "smoke wiring only; not a performance claim",
+  "surface_model_id": "quadratic_total_variance_v1",
+  "clean_status": "PASS",
+  "corrupt_status": "STATIC_ARBITRAGE_VIOLATION",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

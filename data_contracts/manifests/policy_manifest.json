@@ -1,0 +1,20 @@
+{
+  "component_id": "policy",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "experiment_manifest": "configs/experiments/policy_smoke.json",
+  "benchmark_manifest": "configs/benchmark/policy_smoke.json",
+  "inputs": [
+    "artifacts/execution/fills.jsonl",
+    "artifacts/options/surface_diagnostics.json",
+    "artifacts/options/filtered_quotes.jsonl",
+    "data_contracts/fixtures/synthetic_policy.jsonl"
+  ],
+  "outputs": [
+    "artifacts/policy/quote_decisions.jsonl",
+    "artifacts/policy/pnl_attribution.json",
+    "artifacts/policy/run_manifest.json",
+    "artifacts/policy/test_summary.json",
+    "artifacts/policy/benchmark_summary.json"
+  ],
+  "seed": 424242
+}

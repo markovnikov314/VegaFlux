@@ -1,0 +1,104 @@
+{
+    "command":  "python python/scripts/clean_build_test.py",
+    "schema_version":  "vegaflux.canonical_market.v0.1",
+    "status":  "pass",
+    "tests":  [
+                  {
+                      "name":  "build_project",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "contracts_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "fixture_check",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "python_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_compatibility",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_negative_reused_field",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "manifest_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "foundation_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_fixture_check",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_cli_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "decoder_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_cli_snapshot_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "replay_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "feature_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "feature_dataset_cli_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "feature_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "execution_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "execution_cli_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "execution_benchmark_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "options_tests",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "options_cli_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "options_benchmark_smoke",
+                      "result":  "pass"
+                  }
+              ],
+    "timestamp_utc":  "2026-06-24T07:17:37Z"
+}

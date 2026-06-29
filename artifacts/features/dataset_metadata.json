@@ -1,0 +1,22 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "features",
+  "dataset_id": "synthetic_features_v1",
+  "format": "jsonl",
+  "source_input": "./artifacts/decoder/decoded.normalized.jsonl",
+  "row_count": 5,
+  "rows_with_labels": 1,
+  "rows_without_labels": 4,
+  "label_horizon_events": 1,
+  "available_at_semantics": "receive_ts_ns after the source event is replayed",
+  "replay_checksum": 7545941257339690433,
+  "feature_columns": ["best_bid_ticks", "best_ask_ticks", "spread_ticks", "mid_ticks_x2", "bid_qty_top1", "ask_qty_top1", "depth_imbalance_x1e6", "event_type", "sequence_number", "event_ts_ns", "receive_ts_ns", "available_at_ns"],
+  "lineage_columns": ["source_sequence_number", "snapshot_state_checksum", "replay_checksum"],
+  "label_columns": ["future_mid_move_ticks_x2", "label_status"],
+  "splits": {
+    "train": {"rows": 3},
+    "validation": {"rows": 1},
+    "test": {"rows": 1}
+  },
+  "limitations": ["synthetic tiny fixture", "JSONL output", "event-horizon labels only"]
+}

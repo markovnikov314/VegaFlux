@@ -1,0 +1,11 @@
+component,value,source_path,status,interpretation
+quoted_spread_capture,0.18,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+inventory_revaluation,0.199999999999999,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+delta_hedge_pnl,0,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+vega_explain,0,artifacts/policy-validation/pnl_attribution.json,UNIMPLEMENTED_ZERO_PLACEHOLDER,synthetic accounting identity only
+gamma_explain,0,artifacts/policy-validation/pnl_attribution.json,UNIMPLEMENTED_ZERO_PLACEHOLDER,synthetic accounting identity only
+theta_explain,0,artifacts/policy-validation/pnl_attribution.json,UNIMPLEMENTED_ZERO_PLACEHOLDER,synthetic accounting identity only
+fees,0,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+slippage,0,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+residual,0,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only
+total_pnl,0.379999999999999,artifacts/policy-validation/pnl_attribution.json,PASS,synthetic accounting identity only

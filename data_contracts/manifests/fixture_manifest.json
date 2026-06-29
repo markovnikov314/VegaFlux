@@ -1,0 +1,9 @@
+{
+    "events": 5,
+    "normalized_fixture": "data_contracts/fixtures/normalized_events.golden.jsonl",
+    "normalized_sha256": "a7363d8baa6eef1a02bfe57610b45fab6dac6d6d9f593d049776cf4e7ad535cb",
+    "schema_version": "vegaflux.canonical_market.v0.1",
+    "seed": 424242,
+    "source_fixture": "data_contracts/fixtures/synthetic_market_events.jsonl",
+    "source_sha256": "0d4b8ec154ff706505dcd4fd48ea2c3734fc4a7a248d1edc4a6796233b4a32cc"
+}

@@ -1,0 +1,15 @@
+{
+  "benchmark_id": "policy_smoke_cpp",
+  "iterations": 11,
+  "median_policy_attribution_ns": 27200,
+  "min_policy_attribution_ns": 26900,
+  "note": "smoke wiring only; not a performance claim",
+  "policy_model_id": "inventory_skew_v1",
+  "queue_model_id": "visible_fifo_v1",
+  "latency_model_id": "fixed_latency_ns_v1",
+  "surface_model_id": "quadratic_total_variance_v1",
+  "decision_status": "QUOTE",
+  "attribution_status": "PASS",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

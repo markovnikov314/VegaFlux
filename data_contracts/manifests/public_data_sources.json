@@ -1,0 +1,28 @@
+{
+  "schema_version": "vegaflux.public_data_sources.v1",
+  "policy": {
+    "paid_or_proprietary_data_required_for_tests": false,
+    "raw_samples_committed": false,
+    "tests_use_synthetic_fixtures": true
+  },
+  "sources": [
+    {
+      "source_id": "nasdaq_totalview_itch_optional",
+      "status": "deferred",
+      "required_for_tests": false,
+      "parser_path": null,
+      "raw_data_path": null,
+      "checksum": null,
+      "todo": "decoder-validation-realdata: add parser only with a redistributable public sample or user-provided licensed file plus checksum."
+    },
+    {
+      "source_id": "iex_deep_pcap_optional",
+      "status": "deferred",
+      "required_for_tests": false,
+      "parser_path": null,
+      "raw_data_path": null,
+      "checksum": null,
+      "todo": "decoder-validation-realdata: add PCAP parser only with a permitted sample and fixture-level expected output."
+    }
+  ]
+}

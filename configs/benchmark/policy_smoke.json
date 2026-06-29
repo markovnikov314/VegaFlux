@@ -1,0 +1,7 @@
+{
+  "component_id": "policy",
+  "benchmark_id": "policy_smoke_cpp",
+  "config": "configs/experiments/policy_smoke.json",
+  "iterations": 11,
+  "note": "smoke wiring only; not a performance claim"
+}

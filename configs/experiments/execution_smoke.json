@@ -1,0 +1,20 @@
+{
+  "decision_sequence_number": 2,
+  "depth": 5,
+  "features": "artifacts/features/features.jsonl",
+  "fills_output": "artifacts/execution/fills.jsonl",
+  "fixed_latency_ns": 250,
+  "horizon_ns": 10000,
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "latency_model_id": "fixed_latency_ns_v1",
+  "markout_horizon_ns": 1000,
+  "metadata_output": "artifacts/execution/simulation_metadata.json",
+  "order_id": "execution-smoke-buy-1",
+  "component": "execution",
+  "price_ticks": 10000,
+  "quantity": 1,
+  "queue_model_id": "visible_fifo_v1",
+  "seed": 424242,
+  "side": "BUY",
+  "simulation_id": "visible_fifo_smoke_v1"
+}

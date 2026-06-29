@@ -1,0 +1,15 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "execution",
+  "simulation_id": "visible_fifo_smoke_v1",
+  "queue_model_id": "visible_fifo_v1",
+  "latency_model_id": "fixed_latency_ns_v1",
+  "fixed_latency_ns": 250,
+  "horizon_ns": 10000,
+  "input": "./artifacts/decoder/decoded.normalized.jsonl",
+  "features": "./artifacts/features/features.jsonl",
+  "result_count": 1,
+  "replay_checksum": 7545941257339690433,
+  "hidden_liquidity_policy": "not_modeled_as_ground_truth",
+  "limitations": ["visible FIFO baseline", "fixed latency", "JSONL artifact"]
+}

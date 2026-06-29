@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "fixture_parse_smoke",
+  "dataset": "C:\\Users\\white\\OneDrive\\Documents\\fluxpi\\data_contracts\\fixtures\\normalized_events.golden.jsonl",
+  "dataset_checksum": "661a777315ec666eee62baa3d61e563512e7196857c18aac0895e7cb95d5bf97",
+  "events": 5,
+  "iterations": 7,
+  "median_parse_ns": 28200,
+  "min_parse_ns": 27900,
+  "note": "smoke wiring only; not a performance claim",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "seed": 424242,
+  "status": "pass"
+}

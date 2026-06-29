@@ -1,0 +1,53 @@
+{
+    "fixtures": {
+        "data_contracts/fixtures/synthetic_itch_extended.bin": {
+            "bytes": 572,
+            "coverage": [
+                "replace",
+                "delete",
+                "broken_trade",
+                "session_reset"
+            ],
+            "sha256": "d9dcbb924bb8b2b11d706fa25e2a22b5b4ef58d449da9b3ae2117284f67faa95"
+        },
+        "data_contracts/fixtures/synthetic_itch_fuzz_lite.bin": {
+            "bytes": 289,
+            "coverage": [
+                "unsupported_message",
+                "bad_side",
+                "signed_high_bit_negative",
+                "truncated_frame"
+            ],
+            "sha256": "32d47f686c5e80aae03daaa2bb4d679db22bd6df31b19a86b5bda4928c9daa67"
+        },
+        "data_contracts/fixtures/synthetic_itch_gap.bin": {
+            "bytes": 288,
+            "coverage": [
+                "gap"
+            ],
+            "sha256": "d8321fd34630c3880e2c956da27132d7007f10d023e8b2e1f9b1548b14ce0624"
+        },
+        "data_contracts/fixtures/synthetic_itch_malformed.bin": {
+            "bytes": 99,
+            "coverage": [
+                "malformed_short_payload"
+            ],
+            "sha256": "1cf4d52cab02c17fe204c6d6d5452c29224918ef6b304ee962d4c69735064ace"
+        },
+        "data_contracts/fixtures/synthetic_itch.bin": {
+            "bytes": 359,
+            "coverage": [
+                "add",
+                "execute",
+                "cancel"
+            ],
+            "sha256": "326ac085977435df81f9d3aa8bd5dc018706793213b5b567265d552307e7fefc"
+        }
+    },
+    "format": "VFLX synthetic ITCH-like framed binary",
+    "golden_output": "data_contracts/fixtures/normalized_events.golden.jsonl",
+    "golden_output_bytes": 2049,
+    "golden_output_sha256": "a7363d8baa6eef1a02bfe57610b45fab6dac6d6d9f593d049776cf4e7ad535cb",
+    "notes": "decoder-validation extends coverage but keeps the original decoder golden fixture byte-stable.",
+    "schema_version": "vegaflux.canonical_market.v0.1"
+}

@@ -1,0 +1,6 @@
+{
+  "benchmark_id": "fixture_parse_smoke",
+  "dataset": "data_contracts/fixtures/normalized_events.golden.jsonl",
+  "iterations": 7,
+  "seed": 424242
+}

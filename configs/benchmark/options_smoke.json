@@ -1,0 +1,8 @@
+{
+  "component_id": "options",
+  "benchmark_id": "options_smoke_cpp",
+  "input": "data_contracts/fixtures/synthetic_options.csv",
+  "output": "artifacts/options/benchmark_summary.json",
+  "iterations": 11,
+  "note": "smoke wiring only; not a performance claim"
+}

@@ -1,0 +1,37 @@
+[
+  {
+    "figure_id": "queue_fill_fraction",
+    "path": "artifacts/report/figures/queue_fill_fraction.svg",
+    "reason": "source_table",
+    "source_table": "artifacts/report/figures/queue_sensitivity.csv",
+    "status": "rendered"
+  },
+  {
+    "figure_id": "surface_filter_counts",
+    "path": "artifacts/report/figures/surface_quote_filter_counts.svg",
+    "reason": "source_table",
+    "source_table": "artifacts/report/figures/surface_quote_filter_counts.csv",
+    "status": "rendered"
+  },
+  {
+    "figure_id": "policy_quotes",
+    "path": "artifacts/report/figures/policy_ablation_quotes.svg",
+    "reason": "source_table",
+    "source_table": "artifacts/report/figures/policy_ablation.csv",
+    "status": "rendered"
+  },
+  {
+    "figure_id": "bootstrap_intervals",
+    "path": "artifacts/report/figures/bootstrap_intervals.svg",
+    "reason": "source_table",
+    "source_table": "artifacts/report/bootstrap_intervals.csv",
+    "status": "rendered"
+  },
+  {
+    "figure_id": "public_iex_mean_spread",
+    "path": "artifacts/report/figures/public_iex_mean_spread.svg",
+    "reason": "source_table",
+    "source_table": "artifacts/report/figures/public_iex_mean_spread_chart.csv",
+    "status": "rendered"
+  }
+]

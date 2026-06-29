@@ -1,0 +1,13 @@
+build/
+__pycache__/
+*.py[cod]
+*.pdb
+*.ilk
+*.obj
+*.lib
+*.exe
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/

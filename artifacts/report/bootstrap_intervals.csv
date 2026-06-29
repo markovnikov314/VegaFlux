@@ -1,0 +1,11 @@
+metric_id,source_path,n,estimate,ci_low,ci_high,method,seed,status,limitation
+surface_mean_residual_iv,artifacts/surface-validation/iv_residuals.csv,20,0.01364927108264322,-0.009372916373178681,0.03506382635770662,bootstrap_percentile_mean,424242,computed,synthetic fixture rows; no p-value
+surface_mean_abs_residual_iv,artifacts/surface-validation/iv_residuals.csv,20,0.05082311402309666,0.04446354504267442,0.057534279355172926,bootstrap_percentile_mean,424242,computed,synthetic fixture rows; no p-value
+surface_mean_abs_residual_price,artifacts/surface-validation/iv_residuals.csv,20,1.294979601620733,1.1453843276615765,1.4403876030893843,bootstrap_percentile_mean,424242,computed,synthetic fixture rows; no p-value
+queue_fill_fraction,artifacts/execution-sensitivity/scenario_sweep.csv,4,0.33333325,not_enough_data,not_enough_data,not_enough_data,424242,not_enough_data,requires at least 10 rows and independent interpretation
+queue_markout_ticks_x2,artifacts/execution-sensitivity/scenario_sweep.csv,2,4.0,not_enough_data,not_enough_data,not_enough_data,424242,not_enough_data,requires at least 10 rows and independent interpretation
+policy_bid_shift,artifacts/policy-validation/ablation_table.csv,5,-0.024,not_enough_data,not_enough_data,not_enough_data,424242,not_enough_data,requires at least 10 rows and independent interpretation
+surface_greek_abs_error,artifacts/surface-validation/greek_fd_errors.csv,8,8.993976091664645e-09,not_enough_data,not_enough_data,not_enough_data,424242,not_enough_data,requires at least 10 rows and independent interpretation
+public_iex_mean_quote_spread,artifacts/report/public_iex_quote_spreads.csv,12613,107.36060546261793,54.063047102196144,169.51930840402756,bootstrap_percentile_mean,424242,computed,official IEX TOPS sample; top-of-book only; no p-value; mean is sensitive to extreme sample/test-symbol spreads
+public_iex_median_quote_spread,artifacts/report/public_iex_quote_spreads.csv,12613,0.04000000000000625,0.04000000000000625,0.04000000000000625,bootstrap_percentile_median,424242,computed,official IEX TOPS sample; top-of-book only; no p-value
+public_iex_next_mid_minus_trade,artifacts/report/public_iex_markout_proxy.csv,21557,-0.15611450572899754,-0.17221322076355708,-0.1421689567193951,bootstrap_percentile_mean,424242,computed,official IEX TOPS sample; top-of-book only; no p-value

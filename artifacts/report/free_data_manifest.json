@@ -1,0 +1,68 @@
+{
+  "access_date": "2026-06-28",
+  "audited_sources": [
+    {
+      "access_requirements": "Free historical download path; no login/API key/payment observed for HIST. Real-time feeds require agreements and are not used.",
+      "candidate_status": "used_via_official_2018_tops_sample",
+      "checksum_sha256": "ecfcef16491d3d6591b869e0db21164ed0fb9d2a491067f87fde40336f842d3b",
+      "data_file_downloaded": true,
+      "file_size_bytes": 2176186,
+      "limitations": "TOPS is aggregated top-of-book; non-displayed liquidity and individual queue position are not represented; IEX-only venue scope.",
+      "name": "IEX Exchange Historical Data (HIST)",
+      "queue_relevance": "DEEP+ sample PCAP is order-by-order displayed depth; DEEP/TOPS are aggregated and cannot identify individual queue position.",
+      "source_id": "iex_hist",
+      "source_urls": [
+        "https://www.iex.io/products/equities/market-data-connectivity",
+        "https://www.iex.io/resources/trading/market-data",
+        "https://www.iex.io/legal/hist-data-terms",
+        "https://iextrading.com/trading/alerts/2017/014/"
+      ],
+      "terms_summary": "Attribution required when distributing/accessing IEX historical data; IEX retains proprietary rights; data is provided as-is, IEX-only, not investment advice.",
+      "transformations": "gzip decompress in-memory, parse pcapng/IEX-TP/TOPS quote and trade messages, emit summary CSV/JSON"
+    },
+    {
+      "access_requirements": "Old public FTP sample notice; current Nasdaq Data Link page requires JavaScript and may require account/subscription for product data.",
+      "candidate_status": "defer_until_no_login_download_and_terms_are_verified",
+      "checksum_sha256": "not_applicable_not_downloaded",
+      "data_file_downloaded": false,
+      "file_size_bytes": "not_applicable_not_downloaded",
+      "limitations": "2008 sample notice says files remained through March 31, 2009; current product path may be gated.",
+      "name": "Nasdaq TotalView-ITCH public sample notice",
+      "queue_relevance": "Order-level ITCH would be relevant if a lawful sample is confirmed.",
+      "source_id": "nasdaq_totalview_sample",
+      "source_urls": [
+        "https://www.nasdaqtrader.com/TraderNews.aspx?id=nva2008-091",
+        "https://data.nasdaq.com/databases/NTV"
+      ],
+      "terms_summary": "Not selected because availability and redistribution path were not clear enough for a no-login reproducible addendum.",
+      "transformations": "none"
+    },
+    {
+      "access_requirements": "Public web page, but browser verification/JavaScript was observed during audit.",
+      "candidate_status": "rejected_not_queue_relevant",
+      "checksum_sha256": "not_applicable_not_downloaded",
+      "data_file_downloaded": false,
+      "file_size_bytes": "not_applicable_not_downloaded",
+      "limitations": "No order book; not enough for the study question.",
+      "name": "Stooq historical OHLC CSV",
+      "queue_relevance": "OHLC bars cannot support queue, fill, markout, or order-book policy questions.",
+      "source_id": "stooq_ohlc",
+      "source_urls": [
+        "https://stooq.com/db/h/"
+      ],
+      "terms_summary": "Search result states personal use; not selected for repository reproduction.",
+      "transformations": "none"
+    }
+  ],
+  "downloaded_external_files": [
+    {
+      "path": "data_contracts/fixtures/public_iex/20180127_IEXTP1_TOPS1.6.pcap.gz",
+      "sha256": "ecfcef16491d3d6591b869e0db21164ed0fb9d2a491067f87fde40336f842d3b",
+      "size_bytes": 2176186,
+      "source_url": "https://www.googleapis.com/download/storage/v1/b/iex/o/data%2Ffeeds%2F20180127%2F20180127_IEXTP1_TOPS1.6.pcap.gz?alt=media&generation=1517101257197858",
+      "transformations": "gzip decompress in-memory, parse pcapng/IEX-TP/TOPS quote and trade messages, emit report CSV/JSON summaries"
+    }
+  ],
+  "external_data_used_for_metrics": true,
+  "package_id": "research_report"
+}

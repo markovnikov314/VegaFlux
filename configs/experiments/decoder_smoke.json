@@ -1,0 +1,6 @@
+{
+  "dataset": "data_contracts/fixtures/synthetic_itch.bin",
+  "component": "decoder",
+  "seed": 424242,
+  "task": "synthetic ITCH-like decode smoke"
+}

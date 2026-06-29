@@ -1,0 +1,8 @@
+{
+  "benchmark_id": "execution_smoke_cpp",
+  "features": "artifacts/features/features.jsonl",
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "iterations": 11,
+  "note": "smoke wiring only; not a performance claim",
+  "seed": 424242
+}

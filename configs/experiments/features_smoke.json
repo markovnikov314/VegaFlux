@@ -1,0 +1,10 @@
+{
+  "dataset_id": "synthetic_features_v1",
+  "depth": 5,
+  "features_output": "artifacts/features/features.jsonl",
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "label_horizon_events": 1,
+  "metadata_output": "artifacts/features/dataset_metadata.json",
+  "component": "features",
+  "seed": 424242
+}

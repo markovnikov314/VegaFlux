@@ -1,0 +1,23 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "options",
+  "fixture": "data_contracts/fixtures/synthetic_options.csv",
+  "surface_id": "clean_smile_v1",
+  "corrupted_surface_id": "corrupt_smile_v1",
+  "surface_model_id": "quadratic_total_variance_v1",
+  "algorithm_version": "vegaflux_options_cpp_v1",
+  "evaluation_ts_ns": 1000000000,
+  "max_quote_age_ns": 200000000,
+  "assumptions": {
+    "spot": 100.0,
+    "rate": 0.05,
+    "dividend_yield": 0.0
+  },
+  "expected_rejections": [
+    "CROSSED",
+    "STALE",
+    "NON_POSITIVE",
+    "UNINVERTIBLE"
+  ],
+  "expected_corrupt_status": "STATIC_ARBITRAGE_VIOLATION"
+}

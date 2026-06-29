@@ -1,0 +1,19 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "surface-validation",
+  "status": "pass",
+  "surface_model_id": "quadratic_total_variance_v1",
+  "algorithm_version": "vegaflux_options_surface_validation_v1",
+  "input": "./data_contracts/fixtures/synthetic_options_surface.csv",
+  "input_checksum": "fnv64:fe9605ee21a30220",
+  "evaluation_ts_ns": 1000000000,
+  "max_quote_age_ns": 200000000,
+  "assumptions": {"spot": 100, "rate": 0.05, "dividend_yield": 0},
+  "quote_filter_counts": {"ACCEPTED":29,"CROSSED":1,"FUTURE_TIMESTAMP":1,"INVALID_EXPIRY":1,"INVALID_STRIKE":1,"MALFORMED_ROW":2,"NAN_NUMERIC":1,"NON_POSITIVE":1,"STALE":1,"UNINVERTIBLE":2},
+  "fits": [
+    {"surface_id":"clean_smile_v1","surface_model_id":"quadratic_total_variance_v1","algorithm_version":"vegaflux_options_surface_validation_v1","status":"PASS","reason":"fit_ok","accepted_quote_count":20,"quote_checksum":"fnv64:d33e08958eabdd19","input_checksum":"fnv64:fe9605ee21a30220","rmse_iv":0.0528688698747321,"coefficients":[0.0346080975479319,0.00665981925168665,0.373296937516841],"static_arbitrage":{"monotonic_violations":0,"butterfly_violations":0,"calendar_violations":0},"forward_rate_dividend_assumptions":{"spot":100,"rate":0.05,"dividend_yield":0,"forwards_by_expiry":[{"expiry_years":0.5,"forward":102.531512052443},{"expiry_years":1,"forward":105.127109637602}]},"interpolation":{"surface_id":"clean_smile_v1","expiry_years":0.75,"strike":105,"is_call":true,"status":"PASS","reason":"interpolation_ok","implied_vol":0.215192538106683,"fair_value":6.9121281522386}},
+    {"surface_id":"corrupt_smile_v1","surface_model_id":"quadratic_total_variance_v1","algorithm_version":"vegaflux_options_surface_validation_v1","status":"STATIC_ARBITRAGE_VIOLATION","reason":"monotonic=1,butterfly=1,calendar=0","accepted_quote_count":5,"quote_checksum":"fnv64:3723508f57bb1643","input_checksum":"fnv64:fe9605ee21a30220","rmse_iv":null,"coefficients":[],"static_arbitrage":{"monotonic_violations":1,"butterfly_violations":1,"calendar_violations":0},"forward_rate_dividend_assumptions":{"spot":100,"rate":0.05,"dividend_yield":0,"forwards_by_expiry":[{"expiry_years":0.5,"forward":102.531512052443}]},"interpolation":{"surface_id":"corrupt_smile_v1","expiry_years":0.75,"strike":105,"is_call":true,"status":"SURFACE_NOT_PASS","reason":"fit_status_STATIC_ARBITRAGE_VIOLATION","implied_vol":null,"fair_value":null}}
+  ],
+  "forward_extraction_status": "TODO_put_call_parity_fixture_ready_interface_no_fake_forward",
+  "note": "synthetic diagnostic baseline; no strategy or performance claim"
+}

@@ -1,0 +1,16 @@
+{
+  "benchmark_id": "execution_smoke_cpp",
+  "dataset": ".\\artifacts/decoder/decoded.normalized.jsonl",
+  "dataset_checksum": "fnv64:bd07a4031c7d3410",
+  "features": ".\\artifacts/features/features.jsonl",
+  "features_checksum": "fnv64:8bb5da41700f8fa5",
+  "iterations": 11,
+  "median_simulation_ns": 54000,
+  "min_simulation_ns": 53500,
+  "note": "smoke wiring only; not a performance claim",
+  "queue_model_id": "visible_fifo_v1",
+  "latency_model_id": "fixed_latency_ns_v1",
+  "result_status": "UNFILLED_CENSORED",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

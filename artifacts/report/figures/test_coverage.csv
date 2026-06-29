@@ -1,0 +1,8 @@
+component,source_path,status,tests_total,tests_passed,tests_failed_or_other,timestamp_utc,coverage_scope
+foundation,artifacts/quality/test_summary.json,pass,32,32,0,2026-06-24T14:29:01Z,clean build smoke and component checks
+decoder,artifacts/decoder-validation/test_summary.json,pass,32,32,0,2026-06-24T14:56:01Z,clean build smoke and component checks
+replay,artifacts/replay-validation/test_summary.json,pass,32,32,0,2026-06-24T23:34:25Z,clean build smoke and component checks
+features,artifacts/features-validation/test_summary.json,pass,32,32,0,2026-06-25T00:03:22Z,clean build smoke and component checks
+execution,artifacts/execution-sensitivity/test_summary.json,pass,32,32,0,2026-06-25T00:32:11Z,clean build smoke and component checks
+surface,artifacts/surface-validation/test_summary.json,pass,32,32,0,2026-06-25T00:51:26Z,clean build smoke and component checks
+policy,artifacts/policy-validation/test_summary.json,pass,32,32,0,2026-06-25T12:18:22Z,clean build smoke and component checks

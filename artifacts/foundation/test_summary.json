@@ -1,0 +1,40 @@
+{
+    "command":  "python python/scripts/clean_build_test.py",
+    "schema_version":  "vegaflux.canonical_market.v0.1",
+    "status":  "pass",
+    "tests":  [
+                  {
+                      "name":  "build_project",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "contracts_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "fixture_check",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "python_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_compatibility",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "schema_negative_reused_field",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "manifest_smoke",
+                      "result":  "pass"
+                  },
+                  {
+                      "name":  "foundation_benchmark_smoke",
+                      "result":  "pass"
+                  }
+              ],
+    "timestamp_utc":  "2026-06-24T01:52:21Z"
+}

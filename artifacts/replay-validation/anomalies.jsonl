@@ -1,0 +1,1 @@
+{"schema_version":"vegaflux.canonical_market.v0.1","sequence_number":2,"event_ts_ns":1700000000002002000,"event_type":"ADD","order_id":8002,"reference_order_id":0,"reason":"crossed_book_bid","status":"recoverable"}

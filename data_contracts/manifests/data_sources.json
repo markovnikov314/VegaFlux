@@ -1,0 +1,63 @@
+{
+  "schema_version": "vegaflux.data_sources.v1",
+  "policy": {
+    "paid_or_proprietary_data_required_for_tests": false,
+    "profitability_claims_allowed": false,
+    "production_hft_latency_claims_allowed": false
+  },
+  "tiers": [
+    {
+      "tier_id": "synthetic",
+      "status": "required",
+      "required_for_tests": true,
+      "cost": "none",
+      "licensing": "repository-owned generated fixtures",
+      "paths": [
+        "data_contracts/fixtures/synthetic_market_events.jsonl",
+        "data_contracts/fixtures/synthetic_itch.bin",
+        "data_contracts/fixtures/synthetic_itch_extended.bin",
+        "data_contracts/fixtures/synthetic_itch_fuzz_lite.bin",
+        "data_contracts/fixtures/normalized_events.golden.jsonl",
+        "data_contracts/fixtures/synthetic_options.csv",
+        "data_contracts/fixtures/synthetic_policy.jsonl"
+      ],
+      "notes": "Deterministic fixtures used by clean build, schema, replay, execution, options, and policy smoke tests."
+    },
+    {
+      "tier_id": "nasdaq_sample",
+      "status": "optional",
+      "required_for_tests": false,
+      "cost": "none_or_user_provided_license",
+      "licensing": "use only public samples or user-provided licensed files",
+      "paths": [],
+      "notes": "Deferred to decoder-validation-realdata. Keep raw files out of git unless license permits redistribution; store checksums and acquisition notes instead."
+    },
+    {
+      "tier_id": "iex_sample",
+      "status": "optional",
+      "required_for_tests": false,
+      "cost": "none_or_user_provided_license",
+      "licensing": "use only public samples or user-provided licensed files",
+      "paths": [],
+      "notes": "Deferred to decoder-validation-realdata. Useful for non-options equity feed experiments; not a substitute for canonical synthetic regression fixtures."
+    },
+    {
+      "tier_id": "databento_optional",
+      "status": "optional",
+      "required_for_tests": false,
+      "cost": "paid",
+      "licensing": "user-provided Databento account and dataset terms",
+      "paths": [],
+      "notes": "Paid/proprietary data must be opt-in and represented by manifests/checksums, not committed raw captures."
+    },
+    {
+      "tier_id": "crypto_optional",
+      "status": "optional",
+      "required_for_tests": false,
+      "cost": "none_or_exchange_specific",
+      "licensing": "exchange/API terms vary; capture terms and checksums per dataset",
+      "paths": [],
+      "notes": "Allowed for research extensions only after a source data card documents venue, clock semantics, gaps, and fees."
+    }
+  ]
+}

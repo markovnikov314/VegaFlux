@@ -1,0 +1,27 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "features-validation",
+  "dataset_id": "synthetic_features_validation_v1",
+  "format": "jsonl",
+  "source_input": "./artifacts/features-validation/source.normalized.jsonl",
+  "fill_labels_input": "./artifacts/execution/fills.jsonl",
+  "row_count": 10,
+  "rows_with_future_mid_labels": 6,
+  "rows_with_proxy_labels": 6,
+  "rows_without_future_mid_labels": 4,
+  "label_horizon_events": 1,
+  "feature_window_events": 3,
+  "purged_horizon_count": 2,
+  "available_at_semantics": "receive_ts_ns after the source event is replayed",
+  "feature_source_semantics": "feature_source_sequence_number and feature_max_source_available_at_ns must not exceed the row source event",
+  "replay_checksum": 1313721087679358024,
+  "feature_columns": ["best_bid_ticks", "best_ask_ticks", "spread_ticks", "mid_ticks_x2", "microprice_ticks_x2", "bid_qty_top1", "ask_qty_top1", "depth_bid_qty", "depth_ask_qty", "depth_imbalance_x1e6", "order_flow_imbalance_qty", "event_rate_per_second_x1e6", "quote_age_ns", "short_window_realized_volatility_x1e6", "event_type", "side", "sequence_number", "event_ts_ns", "receive_ts_ns", "available_at_ns"],
+  "lineage_columns": ["source_sequence_number", "feature_source_sequence_number", "feature_max_source_available_at_ns", "snapshot_state_checksum", "replay_checksum"],
+  "label_columns": ["future_mid_move_ticks_x2", "realized_spread_proxy_ticks_x2", "adverse_selection_proxy_ticks_x2", "fill_within_horizon_proxy", "label_status"],
+  "splits": {
+    "train": {"rows": 6, "row_range": [0, 5], "sequence_range": [1, 6], "event_time_range_ns": [1700000000003001000, 1700000000003006000], "available_at_range_ns": [1700000000003003500, 1700000000003008500], "future_mid_labels": 4, "proxy_labels": 4, "purged_horizon_count": 1, "label_status_counts": {"missing_current_mid": 1, "ok": 4, "purged_split_boundary": 1}},
+    "validation": {"rows": 2, "row_range": [6, 7], "sequence_range": [7, 8], "event_time_range_ns": [1700000000003007000, 1700000000003008000], "available_at_range_ns": [1700000000003009500, 1700000000003010500], "future_mid_labels": 1, "proxy_labels": 1, "purged_horizon_count": 1, "label_status_counts": {"ok": 1, "purged_split_boundary": 1}},
+    "test": {"rows": 2, "row_range": [8, 9], "sequence_range": [9, 10], "event_time_range_ns": [1700000000003009000, 1700000000003010000], "available_at_range_ns": [1700000000003011500, 1700000000003012500], "future_mid_labels": 1, "proxy_labels": 1, "purged_horizon_count": 0, "label_status_counts": {"insufficient_future": 1, "ok": 1}}
+  },
+  "limitations": ["synthetic fixture", "JSONL output", "fill proxy labels depend on optional execution artifacts"]
+}

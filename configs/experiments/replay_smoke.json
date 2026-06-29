@@ -1,0 +1,6 @@
+{
+  "depth": 5,
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "component": "replay",
+  "seed": 424242
+}

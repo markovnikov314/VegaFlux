@@ -1,0 +1,24 @@
+{
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe (Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64)",
+  "compiler_flags": [
+    "/DWIN32 /D_WINDOWS /EHsc",
+    "/Zi /Ob0 /Od /RTC1",
+    "/O2 /Ob2 /DNDEBUG"
+  ],
+  "config_hash": "8b379928e2df7653201f82364210047390e6a357158c22c150798c956646001d",
+  "cpu_gpu_metadata": {
+    "cpu": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+    "gpu": "NVIDIA GeForce GTX 1650, 566.07",
+    "logical_cpus": 12,
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "dataset_checksum": "96f154782441dc8fd84f910d9d02106294f55297a57e5a3df8bea7b0b34d1955",
+  "git_sha": "f53e28d3fac36ad2061e8ec8d5f99d444cdae853",
+  "os": "Windows-11-10.0.26200-SP0",
+  "component_id": "features",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "seed": 424242,
+  "timestamp_utc": "2026-06-24T06:05:57Z",
+  "tooling_hash": "0fd8fe1b3e726276368a4aeabf33bee961e188d2467c037bc32bda546a505b57"
+}

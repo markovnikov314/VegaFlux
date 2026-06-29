@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "replay_smoke_cpp",
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "iterations": 11,
+  "note": "smoke wiring only; not a performance claim",
+  "seed": 424242
+}

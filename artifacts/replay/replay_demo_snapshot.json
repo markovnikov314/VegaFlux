@@ -1,0 +1,12 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "venue": "SYNTH",
+  "symbol": "VGFX",
+  "session": "SYNTH-0001",
+  "sequence_number": 5,
+  "event_ts_ns": 1700000000000005000,
+  "bids": [{"price_ticks":10000,"quantity":6,"order_count":1},{"price_ticks":9999,"quantity":7,"order_count":1}],
+  "asks": [{"price_ticks":10005,"quantity":10,"order_count":1}],
+  "state_checksum": 7545941257339690433,
+  "checkpoint_id": ""
+}

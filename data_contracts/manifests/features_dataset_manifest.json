@@ -1,0 +1,16 @@
+{
+  "dataset_id": "synthetic_features_v1",
+  "feature_format": "jsonl",
+  "feature_rows": "artifacts/features/features.jsonl",
+  "label": "future_mid_move_ticks_x2",
+  "label_horizon_events": 1,
+  "lineage": [
+    "available_at_ns",
+    "source_sequence_number",
+    "snapshot_state_checksum",
+    "replay_checksum"
+  ],
+  "metadata": "artifacts/features/dataset_metadata.json",
+  "component": "features",
+  "source": "artifacts/decoder/decoded.normalized.jsonl"
+}

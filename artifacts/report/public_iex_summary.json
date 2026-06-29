@@ -1,0 +1,35 @@
+{
+  "access_date": "2026-06-28",
+  "compressed_sha256": "ecfcef16491d3d6591b869e0db21164ed0fb9d2a491067f87fde40336f842d3b",
+  "compressed_size_bytes": 2176186,
+  "limitations": [
+    "IEX TOPS is aggregated top-of-book, not order-level queue data",
+    "trade direction is not inferred, so markout proxy is unsigned by aggressor side",
+    "sample symbols are IEX test symbols from an official sample PCAP"
+  ],
+  "markout_proxy_count": 21557,
+  "message_count": 99871,
+  "message_type_counts": {
+    "A": 6020,
+    "D": 3,
+    "H": 12509,
+    "O": 8566,
+    "P": 9130,
+    "Q": 41959,
+    "S": 6,
+    "T": 21672,
+    "X": 6
+  },
+  "parsed_message_count": 63640,
+  "quote_update_count": 41959,
+  "raw_path": "data_contracts/fixtures/public_iex/20180127_IEXTP1_TOPS1.6.pcap.gz",
+  "source_id": "iex_tops_20180127_sample",
+  "source_url": "https://www.googleapis.com/download/storage/v1/b/iex/o/data%2Ffeeds%2F20180127%2F20180127_IEXTP1_TOPS1.6.pcap.gz?alt=media&generation=1517101257197858",
+  "symbol_count": 8566,
+  "terms_url": "https://www.iex.io/legal/hist-data-terms",
+  "trade_report_count": 21672,
+  "uncompressed_sha256": "09fbcf83bb847650bd0c866b4406c07eff4d893bcb4d6c51ff24d53eadd2cf72",
+  "uncompressed_size_bytes": 10553460,
+  "unsupported_message_policy": "counted, not guessed",
+  "valid_quote_count": 12613
+}

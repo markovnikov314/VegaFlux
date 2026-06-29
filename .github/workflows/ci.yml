@@ -1,0 +1,31 @@
+name: VegaFlux CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  smoke:
+    runs-on: ubuntu-latest
+    env:
+      PYTHONPATH: python
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install build tools
+        run: sudo apt-get update && sudo apt-get install -y cmake g++
+      - name: Debug clean build and tests
+        run: python python/scripts/clean_build_test.py
+      - name: Release clean build and tests
+        run: python python/scripts/clean_build_test.py --preset release --config Release --build-dir build/release
+      - name: Report regeneration
+        run: python python/scripts/generate_report.py
+      - name: Report JSON audits
+        run: |
+          python -m json.tool artifacts/report/stats_summary.json
+          python -m json.tool artifacts/report/free_data_manifest.json
+          python -m json.tool artifacts/report/figures/figures_manifest.json
+      - name: Manifest smoke
+        run: python -m vegaflux_py.manifest --root . --component release-smoke --build-dir build/release --dataset data_contracts/fixtures/normalized_events.golden.jsonl --config configs/experiments/manifest_smoke.json --output artifacts/quality/run_manifest.json --seed 424242

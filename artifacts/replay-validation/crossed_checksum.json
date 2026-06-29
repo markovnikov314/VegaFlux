@@ -1,0 +1,9 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "input": ".\\artifacts/replay-validation/crossed_book.normalized.jsonl",
+  "events_replayed": 2,
+  "state_checksum": 1797508338441674634,
+  "audit_boundaries": 0,
+  "recoverable_anomalies": 1,
+  "status": "pass"
+}

@@ -1,0 +1,16 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "policy",
+  "status": "PASS",
+  "fill_count": 2,
+  "ending_inventory": 1,
+  "total_pnl": 0.379999999999999,
+  "quoted_spread_capture": 0.18,
+  "inventory_revaluation": 0.199999999999999,
+  "fees": 0,
+  "slippage": 0,
+  "residual": 0,
+  "residual_tolerance": 1e-09,
+  "within_tolerance": true,
+  "formula": "total_pnl = quoted_spread_capture + inventory_revaluation - fees - slippage + residual"
+}

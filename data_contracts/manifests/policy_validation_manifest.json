@@ -1,0 +1,25 @@
+{
+  "component_id": "policy-validation",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "experiment_manifest": "configs/experiments/policy_validation_smoke.json",
+  "benchmark_manifest": "configs/benchmark/policy_validation_smoke.json",
+  "inputs": [
+    "artifacts/execution-sensitivity/deterministic_fills.jsonl",
+    "artifacts/execution-sensitivity/simulation_metadata.json",
+    "artifacts/surface-validation/surface_diagnostics.json",
+    "artifacts/surface-validation/filtered_quotes.jsonl",
+    "data_contracts/fixtures/synthetic_policy.jsonl"
+  ],
+  "outputs": [
+    "artifacts/policy-validation/quote_decisions.jsonl",
+    "artifacts/policy-validation/risk_gate_events.jsonl",
+    "artifacts/policy-validation/ablation_table.csv",
+    "artifacts/policy-validation/ablation_source.json",
+    "artifacts/policy-validation/pnl_attribution.json",
+    "artifacts/policy-validation/run_manifest.json",
+    "artifacts/policy-validation/test_summary.json",
+    "artifacts/policy-validation/benchmark_summary.json"
+  ],
+  "seed": 424242,
+  "note": "Synthetic smoke evidence only; no performance or trading-return claim."
+}

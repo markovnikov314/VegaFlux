@@ -1,0 +1,7 @@
+{
+  "benchmark_id": "decoder_smoke",
+  "dataset": "data_contracts/fixtures/synthetic_itch.bin",
+  "iterations": 7,
+  "note": "Smoke wiring only; not a performance claim.",
+  "seed": 424242
+}

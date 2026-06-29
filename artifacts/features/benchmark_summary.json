@@ -1,0 +1,13 @@
+{
+  "benchmark_id": "feature_build_smoke_cpp",
+  "dataset": ".\\artifacts/decoder/decoded.normalized.jsonl",
+  "dataset_checksum": "fnv64:bd07a4031c7d3410",
+  "input_events": 5,
+  "iterations": 11,
+  "median_build_ns": 892800,
+  "min_build_ns": 827700,
+  "note": "smoke wiring only; not a performance claim",
+  "replay_checksum": 7545941257339690433,
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "status": "pass"
+}

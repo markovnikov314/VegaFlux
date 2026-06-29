@@ -1,0 +1,16 @@
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"policy_model_id","status":"PASS","reason":"implemented_policy_model"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"surface_status","status":"PASS","reason":"PASS"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"quote_status","status":"PASS","reason":"ACCEPTED"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"execution_present","status":"PASS","reason":"execution_input_ok"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"execution_safe","status":"PASS","reason":"execution_input_ok"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"feed_gap","status":"PASS","reason":"feed_metadata_ok"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"corrupt_snapshot","status":"PASS","reason":"snapshot_metadata_ok"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"quote_age","status":"PASS","reason":"quote_age_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"execution_age","status":"PASS","reason":"execution_age_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"surface_age","status":"PASS","reason":"surface_age_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"delta","status":"PASS","reason":"delta_limit_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"gamma","status":"PASS","reason":"gamma_limit_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"vega","status":"PASS","reason":"vega_limit_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"notional","status":"PASS","reason":"notional_limit_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"daily_loss","status":"PASS","reason":"simulated_daily_loss_checked"}
+{"schema_version":"vegaflux.canonical_market.v0.1","component_id":"policy-validation","gate":"drawdown","status":"PASS","reason":"simulated_drawdown_checked"}

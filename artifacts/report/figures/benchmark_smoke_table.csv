@@ -1,0 +1,8 @@
+component,benchmark_id,source_path,iterations,work_units,median_metric,median_value_ns,min_metric,min_value_ns,note,claim_policy
+foundation,fixture_parse_smoke,artifacts/quality/benchmark_summary.json,7,5,median_parse_ns,28200,min_parse_ns,27900,smoke wiring only; not a performance claim,no production latency or throughput claim
+decoder,decoder_smoke_cpp,artifacts/decoder-validation/benchmark_summary.json,7,5,median_decode_ns,310900,min_decode_ns,304300,smoke wiring only; not a performance claim,no production latency or throughput claim
+replay,replay_smoke_cpp,artifacts/replay-validation/benchmark_summary.json,11,8,median_replay_ns,35200,min_replay_ns,33900,smoke wiring only; not a performance claim,no production latency or throughput claim
+features,feature_build_smoke_cpp,artifacts/features-validation/benchmark_summary.json,11,10,median_build_ns,2546900,min_build_ns,1731200,smoke wiring only; not a performance claim,no production latency or throughput claim
+execution,execution_smoke_cpp,artifacts/execution-sensitivity/benchmark_summary.json,11,,median_simulation_ns,99600,min_simulation_ns,97800,smoke wiring only; not a performance claim,no production latency or throughput claim
+surface,options_smoke_cpp,artifacts/surface-validation/benchmark_summary.json,11,,median_diagnostics_ns,1920700,min_diagnostics_ns,1663600,smoke wiring only; not a performance claim,no production latency or throughput claim
+policy,policy_smoke_cpp,artifacts/policy-validation/benchmark_summary.json,11,,median_policy_attribution_ns,175700,min_policy_attribution_ns,174500,smoke wiring only; not a performance claim,no production latency or throughput claim

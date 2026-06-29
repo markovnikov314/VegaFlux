@@ -1,0 +1,3 @@
+surface_id,source_path,surface_model_id,status,reason,accepted_quote_count,rmse_iv,monotonic_violations,butterfly_violations,calendar_violations,interpolation_status,interpolation_fair_value,static_source_path,static_reason
+clean_smile_v1,artifacts/surface-validation/surface_diagnostics.json,quadratic_total_variance_v1,PASS,fit_ok,20,0.0528688698747321,0,0,0,PASS,6.9121281522386,artifacts/surface-validation/static_arbitrage.csv,fit_ok
+corrupt_smile_v1,artifacts/surface-validation/surface_diagnostics.json,quadratic_total_variance_v1,STATIC_ARBITRAGE_VIOLATION,"monotonic=1,butterfly=1,calendar=0",5,,1,1,0,SURFACE_NOT_PASS,,artifacts/surface-validation/static_arbitrage.csv,"monotonic=1,butterfly=1,calendar=0"

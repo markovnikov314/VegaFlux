@@ -1,0 +1,5 @@
+scenario_id,queue_model_id,latency_model_id,hidden_ahead_multiplier,latency_multiplier,cancel_rate_multiplier,fill_status,filled_quantity,markout_ticks_x2
+baseline,visible_fifo_v1,fixed_latency_ns_v1,0,1,1,FULL,3,4
+hidden_ahead_x1,visible_fifo_v1,fixed_latency_ns_v1,1,1,1,UNFILLED_CENSORED,0,
+latency_x4,visible_fifo_v1,fixed_latency_ns_v1,0,4,1,UNFILLED_CENSORED,0,
+cancel_rate_x0_5,visible_fifo_v1,fixed_latency_ns_v1,0,1,0.5,PARTIAL_CENSORED,1,4

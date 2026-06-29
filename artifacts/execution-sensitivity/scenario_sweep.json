@@ -1,0 +1,12 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "component_id": "execution-sensitivity",
+  "source": "synthetic analytical fixture",
+  "scenario_count": 4,
+  "scenarios": [
+    {"scenario_id":"baseline","queue_model_id":"visible_fifo_v1","latency_model_id":"fixed_latency_ns_v1","hidden_ahead_multiplier":0,"latency_multiplier":1,"cancel_rate_multiplier":1,"fill_status":"FULL","filled_quantity":3,"markout_ticks_x2":4},
+    {"scenario_id":"hidden_ahead_x1","queue_model_id":"visible_fifo_v1","latency_model_id":"fixed_latency_ns_v1","hidden_ahead_multiplier":1,"latency_multiplier":1,"cancel_rate_multiplier":1,"fill_status":"UNFILLED_CENSORED","filled_quantity":0,"markout_ticks_x2":null},
+    {"scenario_id":"latency_x4","queue_model_id":"visible_fifo_v1","latency_model_id":"fixed_latency_ns_v1","hidden_ahead_multiplier":0,"latency_multiplier":4,"cancel_rate_multiplier":1,"fill_status":"UNFILLED_CENSORED","filled_quantity":0,"markout_ticks_x2":null},
+    {"scenario_id":"cancel_rate_x0_5","queue_model_id":"visible_fifo_v1","latency_model_id":"fixed_latency_ns_v1","hidden_ahead_multiplier":0,"latency_multiplier":1,"cancel_rate_multiplier":0.5,"fill_status":"PARTIAL_CENSORED","filled_quantity":1,"markout_ticks_x2":4}
+  ]
+}

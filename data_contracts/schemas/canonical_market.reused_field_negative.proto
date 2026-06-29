@@ -1,0 +1,132 @@
+syntax = "proto3";
+package vegaflux.v1;
+
+// Canonical market-event contract v0.1. Never reuse field numbers.
+message CanonicalMarketEvent {
+  enum EventType {
+    EVENT_UNSPECIFIED = 0;
+    ADD = 1;
+    MODIFY = 2;
+    CANCEL = 3;
+    DELETE = 4;
+    EXECUTE = 5;
+    TRADE = 6;
+    AUCTION = 7;
+    GAP_DETECTED = 8;
+    SESSION_RESET = 9;
+  }
+
+  enum Side {
+    SIDE_UNSPECIFIED = 0;
+    BID = 1;
+    ASK = 2;
+  }
+
+  string schema_version = 1;
+  string venue_code = 2;
+  string channel = 3;
+  string session = 4;
+  uint64 sequence_number = 5;
+  int64 event_ts_ns = 6;
+  int64 receive_ts_ns = 7;
+  string symbol = 8;
+  EventType event_type = 9;
+  Side side = 10;
+  int64 price_ticks = 11;
+  int64 quantity = 12;
+  uint64 order_id = 13;
+  uint64 reference_order_id = 14;
+  bytes raw_payload = 15;
+  map<string, string> tags = 16;
+}
+
+message BookLevel {
+  int64 price_ticks = 1;
+  int64 quantity = 2;
+  uint32 order_count = 3;
+}
+
+message BookSnapshot {
+  string schema_version = 1;
+  string venue_code = 2;
+  string symbol = 3;
+  string session = 4;
+  uint64 sequence_number = 5;
+  int64 event_ts_ns = 6;
+  repeated BookLevel bids = 7;
+  repeated BookLevel asks = 8;
+  uint64 state_checksum = 9;
+  string checkpoint_id = 10;
+}
+
+message ReplayCursor {
+  string schema_version = 1;
+  string source_log_id = 2;
+  string checkpoint_id = 3;
+  uint64 next_sequence_number = 4;
+  int64 seek_event_ts_ns = 5;
+  map<string, string> metadata = 6;
+}
+
+message SimOrder {
+  string sim_order_id = 1;
+  CanonicalMarketEvent.Side side = 2;
+  int64 price_ticks = 3;
+  int64 quantity = 4;
+  int64 decision_ts_ns = 5;
+  string symbol = 6;
+  map<string, string> metadata = 7;
+}
+
+message FillEvent {
+  int64 fill_ts_ns = 1;
+  int64 quantity = 2;
+  int64 price_ticks = 3;
+  string liquidity_flag = 4;
+}
+
+message Fill {
+  string sim_order_id = 1;
+  int64 filled_quantity = 2;
+  int64 first_fill_ts_ns = 3;
+  int64 fees_ticks_x_quantity = 4;
+  int64 markout_100ms_ticks = 5;
+  string queue_model_id = 6;
+  string latency_model_id = 7;
+  repeated FillEvent fill_events = 8;
+  map<string, string> diagnostics = 9;
+}
+
+message SurfacePoint {
+  string symbol = 1;
+  double strike = 2;
+  double expiry_years = 3;
+  bool is_call = 4;
+  double implied_vol = 5;
+  double bid_price = 6;
+  double ask_price = 7;
+}
+
+message SurfaceSnapshot {
+  string schema_version = 1;
+  string surface_id = 2;
+  int64 asof_ts_ns = 3;
+  string model_id = 4;
+  repeated SurfacePoint points = 5;
+  map<string, string> provenance = 6;
+}
+
+message ExperimentManifest {
+  string schema_version = 1;
+  string component_id = 2;
+  string git_sha = 3;
+  string compiler = 4;
+  repeated string compiler_flags = 5;
+  string os = 6;
+  string cpu_gpu_metadata = 7;
+  string dataset_checksum = 8;
+  string config_hash = 9;
+  uint64 seed = 10;
+  string timestamp_utc = 11;
+  map<string, string> metadata = 12;
+}

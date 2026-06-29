@@ -1,0 +1,46 @@
+{
+  "cmake_version": "cmake version 3.30.3",
+  "compiler": "C:\\Program Files (x86)\\Microsoft Visual Studio\\2019\\BuildTools\\VC\\Tools\\MSVC\\14.29.30133\\bin\\Hostx64\\x64\\cl.exe (Microsoft (R) C/C++ Optimizing Compiler Version 19.29.30154 for x64)",
+  "compiler_flags": [
+    "/DWIN32 /D_WINDOWS /EHsc",
+    "/Zi /Ob0 /Od /RTC1",
+    "/O2 /Ob2 /DNDEBUG"
+  ],
+  "config_hash": "f2a8fae37a1a42dd9acefc720d98887abbb54f0fe43c02e25ac167f89c1f460e",
+  "cpu": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+  "cpu_gpu_metadata": {
+    "cpu": "AMD64 Family 23 Model 96 Stepping 1, AuthenticAMD",
+    "gpu": "NVIDIA GeForce GTX 1650, 566.07",
+    "hostname": "White",
+    "logical_cpus": 12,
+    "machine": "AMD64",
+    "platform": "Windows-11-10.0.26200-SP0"
+  },
+  "dataset_checksum": "5b404afd7a1631b86b9b68c624a464eeaf4315bf2ea55f5a0fe793c137b8dd58",
+  "dependency_lock_files": [
+    "pyproject.toml",
+    "CMakePresets.json",
+    "CMakeLists.txt"
+  ],
+  "dependency_lock_hash": "73553f81429e3bff11514f283e187799eea890e5405c46c247ed6282225dcdab",
+  "environment": {
+    "build_dir": "C:\\Users\\white\\OneDrive\\Documents\\fluxpi\\build\\dev",
+    "ci": "false",
+    "python_executable": "C:\\Python312\\python.exe",
+    "pythonpath_set": true
+  },
+  "git_sha": "faafca54f115c302e5db3722b717cab2e6798deb",
+  "gpu": "NVIDIA GeForce GTX 1650, 566.07",
+  "host": {
+    "hostname": "White",
+    "logical_cpus": 12,
+    "machine": "AMD64"
+  },
+  "os": "Windows-11-10.0.26200-SP0",
+  "component_id": "execution-sensitivity",
+  "python_version": "3.12.4",
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "seed": 424242,
+  "timestamp_utc": "2026-06-25T00:32:11Z",
+  "tooling_hash": "73553f81429e3bff11514f283e187799eea890e5405c46c247ed6282225dcdab"
+}

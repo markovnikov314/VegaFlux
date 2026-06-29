@@ -1,0 +1,8 @@
+{
+  "component_id": "surface-validation",
+  "benchmark_id": "options_smoke_cpp",
+  "input": "data_contracts/fixtures/synthetic_options_surface.csv",
+  "output": "artifacts/surface-validation/benchmark_summary.json",
+  "iterations": 11,
+  "note": "smoke wiring only; not a performance claim"
+}

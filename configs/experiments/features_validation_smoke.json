@@ -1,0 +1,12 @@
+{
+  "dataset_id" : "synthetic_features_validation_v1",
+  "depth" : 5,
+  "feature_window_events" : 3,
+  "features_output" : "artifacts/features-validation/features.jsonl",
+  "fill_labels_input" : "artifacts/execution/fills.jsonl",
+  "input" : "artifacts/features-validation/source.normalized.jsonl",
+  "label_horizon_events" : 1,
+  "metadata_output" : "artifacts/features-validation/dataset_metadata.json",
+  "component" : "features-validation",
+  "seed" : 424242
+}

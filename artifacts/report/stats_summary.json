@@ -1,0 +1,298 @@
+{
+  "acceptance": {
+    "external_data_used_for_metrics": true,
+    "external_paid_data_required": false,
+    "missing_evidence_listed_as_limitation": true,
+    "p_values_computed": false,
+    "production_hft_latency_claims": false,
+    "profitability_claims": false
+  },
+  "bootstrap_policy": {
+    "iterations": 2000,
+    "min_rows": 10,
+    "p_values": "not_computed",
+    "seed": 424242
+  },
+  "bootstrap_results": [
+    {
+      "ci_high": 0.03506382635770662,
+      "ci_low": -0.009372916373178681,
+      "estimate": 0.01364927108264322,
+      "limitation": "synthetic fixture rows; no p-value",
+      "method": "bootstrap_percentile_mean",
+      "metric_id": "surface_mean_residual_iv",
+      "n": 20,
+      "seed": 424242,
+      "source_path": "artifacts/surface-validation/iv_residuals.csv",
+      "status": "computed"
+    },
+    {
+      "ci_high": 0.057534279355172926,
+      "ci_low": 0.04446354504267442,
+      "estimate": 0.05082311402309666,
+      "limitation": "synthetic fixture rows; no p-value",
+      "method": "bootstrap_percentile_mean",
+      "metric_id": "surface_mean_abs_residual_iv",
+      "n": 20,
+      "seed": 424242,
+      "source_path": "artifacts/surface-validation/iv_residuals.csv",
+      "status": "computed"
+    },
+    {
+      "ci_high": 1.4403876030893843,
+      "ci_low": 1.1453843276615765,
+      "estimate": 1.294979601620733,
+      "limitation": "synthetic fixture rows; no p-value",
+      "method": "bootstrap_percentile_mean",
+      "metric_id": "surface_mean_abs_residual_price",
+      "n": 20,
+      "seed": 424242,
+      "source_path": "artifacts/surface-validation/iv_residuals.csv",
+      "status": "computed"
+    },
+    {
+      "ci_high": "not_enough_data",
+      "ci_low": "not_enough_data",
+      "estimate": 0.33333325,
+      "limitation": "requires at least 10 rows and independent interpretation",
+      "method": "not_enough_data",
+      "metric_id": "queue_fill_fraction",
+      "n": 4,
+      "seed": 424242,
+      "source_path": "artifacts/execution-sensitivity/scenario_sweep.csv",
+      "status": "not_enough_data"
+    },
+    {
+      "ci_high": "not_enough_data",
+      "ci_low": "not_enough_data",
+      "estimate": 4.0,
+      "limitation": "requires at least 10 rows and independent interpretation",
+      "method": "not_enough_data",
+      "metric_id": "queue_markout_ticks_x2",
+      "n": 2,
+      "seed": 424242,
+      "source_path": "artifacts/execution-sensitivity/scenario_sweep.csv",
+      "status": "not_enough_data"
+    },
+    {
+      "ci_high": "not_enough_data",
+      "ci_low": "not_enough_data",
+      "estimate": -0.024,
+      "limitation": "requires at least 10 rows and independent interpretation",
+      "method": "not_enough_data",
+      "metric_id": "policy_bid_shift",
+      "n": 5,
+      "seed": 424242,
+      "source_path": "artifacts/policy-validation/ablation_table.csv",
+      "status": "not_enough_data"
+    },
+    {
+      "ci_high": "not_enough_data",
+      "ci_low": "not_enough_data",
+      "estimate": 8.993976091664645e-09,
+      "limitation": "requires at least 10 rows and independent interpretation",
+      "method": "not_enough_data",
+      "metric_id": "surface_greek_abs_error",
+      "n": 8,
+      "seed": 424242,
+      "source_path": "artifacts/surface-validation/greek_fd_errors.csv",
+      "status": "not_enough_data"
+    },
+    {
+      "ci_high": 169.51930840402756,
+      "ci_low": 54.063047102196144,
+      "estimate": 107.36060546261793,
+      "limitation": "official IEX TOPS sample; top-of-book only; no p-value; mean is sensitive to extreme sample/test-symbol spreads",
+      "method": "bootstrap_percentile_mean",
+      "metric_id": "public_iex_mean_quote_spread",
+      "n": 12613,
+      "seed": 424242,
+      "source_path": "artifacts/report/public_iex_quote_spreads.csv",
+      "status": "computed"
+    },
+    {
+      "ci_high": 0.04000000000000625,
+      "ci_low": 0.04000000000000625,
+      "estimate": 0.04000000000000625,
+      "limitation": "official IEX TOPS sample; top-of-book only; no p-value",
+      "method": "bootstrap_percentile_median",
+      "metric_id": "public_iex_median_quote_spread",
+      "n": 12613,
+      "seed": 424242,
+      "source_path": "artifacts/report/public_iex_quote_spreads.csv",
+      "status": "computed"
+    },
+    {
+      "ci_high": -0.1421689567193951,
+      "ci_low": -0.17221322076355708,
+      "estimate": -0.15611450572899754,
+      "limitation": "official IEX TOPS sample; top-of-book only; no p-value",
+      "method": "bootstrap_percentile_mean",
+      "metric_id": "public_iex_next_mid_minus_trade",
+      "n": 21557,
+      "seed": 424242,
+      "source_path": "artifacts/report/public_iex_markout_proxy.csv",
+      "status": "computed"
+    }
+  ],
+  "claim_evidence": [
+    {
+      "claim": "The report includes statistical intervals only for samples meeting the bootstrap threshold.",
+      "claim_id": "REPORT-C01",
+      "evidence_paths": "artifacts/report/bootstrap_intervals.csv;artifacts/surface-validation/iv_residuals.csv"
+    },
+    {
+      "claim": "Queue outcomes are sensitive to hidden-ahead, latency, and cancel-rate assumptions in the synthetic fixture.",
+      "claim_id": "REPORT-C02",
+      "evidence_paths": "artifacts/report/figures/queue_sensitivity.csv;artifacts/execution-sensitivity/scenario_sweep.csv"
+    },
+    {
+      "claim": "Surface safety diagnostics reject unsafe synthetic smiles and expose quote-filter statuses.",
+      "claim_id": "REPORT-C03",
+      "evidence_paths": "artifacts/report/figures/surface_diagnostics.csv;artifacts/surface-validation/static_arbitrage.csv;artifacts/surface-validation/surface_diagnostics.json"
+    },
+    {
+      "claim": "Policy ablation rows are quote-mechanics checks only, not market-return evidence.",
+      "claim_id": "REPORT-C04",
+      "evidence_paths": "artifacts/report/figures/policy_ablation.csv;artifacts/policy-validation/ablation_table.csv"
+    },
+    {
+      "claim": "The report uses a no-login public IEX TOPS sample for real quote/trade diagnostics.",
+      "claim_id": "REPORT-C05",
+      "evidence_paths": "artifacts/report/free_data_manifest.json;artifacts/report/public_iex_summary.json;artifacts/report/public_iex_quote_stats.csv;REPORT.md"
+    },
+    {
+      "claim": "Public TOPS evidence does not support individual visible queue or fill claims.",
+      "claim_id": "REPORT-C06",
+      "evidence_paths": "artifacts/report/public_iex_summary.json;artifacts/report/negative_results.csv;REPORT.md"
+    }
+  ],
+  "data_basis": "checked-in synthetic fixtures plus official no-login IEX TOPS public sample",
+  "generated_from_head": "not_embedded_in_checked_in_artifacts",
+  "git_head_capture_policy": "omitted from generated artifacts so clean regeneration remains deterministic after documentation commits",
+  "package_id": "research_report",
+  "plotting_status": [
+    {
+      "figure_id": "queue_fill_fraction",
+      "path": "artifacts/report/figures/queue_fill_fraction.svg",
+      "reason": "source_table",
+      "source_table": "artifacts/report/figures/queue_sensitivity.csv",
+      "status": "rendered"
+    },
+    {
+      "figure_id": "surface_filter_counts",
+      "path": "artifacts/report/figures/surface_quote_filter_counts.svg",
+      "reason": "source_table",
+      "source_table": "artifacts/report/figures/surface_quote_filter_counts.csv",
+      "status": "rendered"
+    },
+    {
+      "figure_id": "policy_quotes",
+      "path": "artifacts/report/figures/policy_ablation_quotes.svg",
+      "reason": "source_table",
+      "source_table": "artifacts/report/figures/policy_ablation.csv",
+      "status": "rendered"
+    },
+    {
+      "figure_id": "bootstrap_intervals",
+      "path": "artifacts/report/figures/bootstrap_intervals.svg",
+      "reason": "source_table",
+      "source_table": "artifacts/report/bootstrap_intervals.csv",
+      "status": "rendered"
+    },
+    {
+      "figure_id": "public_iex_mean_spread",
+      "path": "artifacts/report/figures/public_iex_mean_spread.svg",
+      "reason": "source_table",
+      "source_table": "artifacts/report/figures/public_iex_mean_spread_chart.csv",
+      "status": "rendered"
+    }
+  ],
+  "public_iex_summary": {
+    "access_date": "2026-06-28",
+    "compressed_sha256": "ecfcef16491d3d6591b869e0db21164ed0fb9d2a491067f87fde40336f842d3b",
+    "compressed_size_bytes": 2176186,
+    "limitations": [
+      "IEX TOPS is aggregated top-of-book, not order-level queue data",
+      "trade direction is not inferred, so markout proxy is unsigned by aggressor side",
+      "sample symbols are IEX test symbols from an official sample PCAP"
+    ],
+    "markout_proxy_count": 21557,
+    "message_count": 99871,
+    "message_type_counts": {
+      "A": 6020,
+      "D": 3,
+      "H": 12509,
+      "O": 8566,
+      "P": 9130,
+      "Q": 41959,
+      "S": 6,
+      "T": 21672,
+      "X": 6
+    },
+    "parsed_message_count": 63640,
+    "quote_update_count": 41959,
+    "raw_path": "data_contracts/fixtures/public_iex/20180127_IEXTP1_TOPS1.6.pcap.gz",
+    "source_id": "iex_tops_20180127_sample",
+    "source_url": "https://www.googleapis.com/download/storage/v1/b/iex/o/data%2Ffeeds%2F20180127%2F20180127_IEXTP1_TOPS1.6.pcap.gz?alt=media&generation=1517101257197858",
+    "symbol_count": 8566,
+    "terms_url": "https://www.iex.io/legal/hist-data-terms",
+    "trade_report_count": 21672,
+    "uncompressed_sha256": "09fbcf83bb847650bd0c866b4406c07eff4d893bcb4d6c51ff24d53eadd2cf72",
+    "uncompressed_size_bytes": 10553460,
+    "unsupported_message_policy": "counted, not guessed",
+    "valid_quote_count": 12613
+  },
+  "quantstats_status": "not_used_no_strategy_returns_series; public TOPS supports quote/trade diagnostics only",
+  "release_files": [
+    "README.md",
+    "REPORT.md",
+    "artifacts/report/stats_summary.json",
+    "artifacts/report/bootstrap_intervals.csv",
+    "artifacts/report/negative_results.csv",
+    "artifacts/report/free_data_manifest.json",
+    "artifacts/report/public_iex_summary.json",
+    "artifacts/report/public_iex_quote_stats.csv",
+    "artifacts/report/public_iex_tops_events_sample.csv",
+    "artifacts/report/public_iex_quote_spreads.csv",
+    "artifacts/report/public_iex_markout_proxy.csv",
+    "artifacts/report/repro_commands.md",
+    "data_contracts/fixtures/public_iex/20180127_IEXTP1_TOPS1.6.pcap.gz",
+    "artifacts/report/figures/data_lineage.csv",
+    "artifacts/report/figures/test_coverage.csv",
+    "artifacts/report/figures/benchmark_smoke_table.csv",
+    "artifacts/report/figures/queue_sensitivity.csv",
+    "artifacts/report/figures/surface_diagnostics.csv",
+    "artifacts/report/figures/surface_quote_filter_counts.csv",
+    "artifacts/report/figures/policy_ablation.csv",
+    "artifacts/report/figures/pnl_attribution_components.csv",
+    "artifacts/report/figures/public_iex_quote_stats.csv",
+    "artifacts/report/figures/public_iex_mean_spread_chart.csv",
+    "artifacts/report/figures/public_iex_quote_spreads_sample.csv",
+    "artifacts/report/figures/public_iex_markout_proxy_sample.csv",
+    "artifacts/report/figures/claim_evidence.csv",
+    "artifacts/report/figures/figures_manifest.json",
+    "artifacts/report/figures/queue_fill_fraction.svg",
+    "artifacts/report/figures/surface_quote_filter_counts.svg",
+    "artifacts/report/figures/policy_ablation_quotes.svg",
+    "artifacts/report/figures/bootstrap_intervals.svg",
+    "artifacts/report/figures/public_iex_mean_spread.svg"
+  ],
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "study_question": "How sensitive are passive fills, markouts, and policy outputs to visible queue, latency, hidden-ahead, cancel-rate, and surface safety assumptions?",
+  "table_counts": {
+    "benchmark_rows": 7,
+    "bootstrap_rows": 10,
+    "data_lineage_rows": 18,
+    "negative_result_rows": 8,
+    "policy_ablation_rows": 5,
+    "public_iex_markout_proxy_rows": 21557,
+    "public_iex_mean_spread_chart_rows": 14,
+    "public_iex_quote_spread_rows": 12613,
+    "public_iex_sample_rows": 5000,
+    "public_iex_symbol_rows": 8566,
+    "queue_sensitivity_rows": 4,
+    "surface_rows": 2,
+    "test_coverage_rows": 7
+  }
+}

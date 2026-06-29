@@ -1,0 +1,2 @@
+{"schema_version":"vegaflux.canonical_market.v0.1","sequence_number":6,"event_ts_ns":1700000000001006000,"event_type":"BROKEN_TRADE","order_id":4001,"missing_count":0,"reason":"broken_trade_not_reversed"}
+{"schema_version":"vegaflux.canonical_market.v0.1","sequence_number":7,"event_ts_ns":1700000000001007000,"event_type":"SESSION_RESET","order_id":0,"missing_count":0,"reason":"session_reset_cleared_book"}

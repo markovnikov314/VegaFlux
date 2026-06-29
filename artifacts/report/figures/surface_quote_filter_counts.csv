@@ -1,0 +1,11 @@
+status,count,source_path,interpretation
+ACCEPTED,29,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+CROSSED,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+FUTURE_TIMESTAMP,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+INVALID_EXPIRY,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+INVALID_STRIKE,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+MALFORMED_ROW,2,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+NAN_NUMERIC,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+NON_POSITIVE,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+STALE,1,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage
+UNINVERTIBLE,2,artifacts/surface-validation/surface_diagnostics.json,quote filter fixture coverage

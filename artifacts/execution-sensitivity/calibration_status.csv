@@ -1,0 +1,5 @@
+scenario_id,synthetic_truth_status,observed_status,synthetic_truth_filled_quantity,observed_filled_quantity,synthetic_truth_markout_ticks_x2,observed_markout_ticks_x2,result
+baseline,FULL,FULL,3,3,4,4,pass
+hidden_ahead_x1,UNFILLED_CENSORED,UNFILLED_CENSORED,0,0,,,pass
+latency_x4,UNFILLED_CENSORED,UNFILLED_CENSORED,0,0,,,pass
+cancel_rate_x0_5,PARTIAL_CENSORED,PARTIAL_CENSORED,1,1,4,4,pass

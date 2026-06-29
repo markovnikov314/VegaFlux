@@ -1,0 +1,9 @@
+{
+  "schema_version": "vegaflux.canonical_market.v0.1",
+  "input": ".\\artifacts/decoder/decoded.normalized.jsonl",
+  "events_replayed": 5,
+  "state_checksum": 7545941257339690433,
+  "audit_boundaries": 0,
+  "recoverable_anomalies": 0,
+  "status": "pass"
+}

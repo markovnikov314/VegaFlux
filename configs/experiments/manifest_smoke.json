@@ -1,0 +1,6 @@
+{
+  "config_id": "manifest_smoke",
+  "dataset": "data_contracts/fixtures/normalized_events.golden.jsonl",
+  "component": "foundation",
+  "seed": 424242
+}

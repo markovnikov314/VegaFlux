@@ -1,0 +1,16 @@
+{
+  "feature_format": "jsonl",
+  "feature_rows": "artifacts/features/features.jsonl",
+  "fills": "artifacts/execution/fills.jsonl",
+  "input": "artifacts/decoder/decoded.normalized.jsonl",
+  "latency_model_id": "fixed_latency_ns_v1",
+  "metadata": "artifacts/execution/simulation_metadata.json",
+  "component": "execution",
+  "queue_model_id": "visible_fifo_v1",
+  "source_lineage": [
+    "available_at_ns",
+    "source_sequence_number",
+    "snapshot_state_checksum",
+    "replay_checksum"
+  ]
+}
